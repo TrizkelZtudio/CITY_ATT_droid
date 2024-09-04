@@ -1,0 +1,13 @@
+.angular
+.DS_Store
+node_modules/
+.platform
+plugins/
+plugins/android.json
+ios/
+android/
+
+dist/
+out-tsc/
+.vscode/
+.idea/

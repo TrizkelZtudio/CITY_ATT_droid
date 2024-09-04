@@ -1,0 +1,60 @@
+
+<ion-header [translucent]="true" style="z-index: 0;">
+
+
+
+</ion-header>
+
+
+<ion-content>
+
+
+
+
+    <div class="backto fixed-top" onclick="window.history.go(-1);" style="color: var(--bs-primary)!important; display: block; position: relative;">
+      <i class="fas fa-chevron-left"></i>
+    </div>
+
+    <section class="standard">
+
+        <div class="title-section">
+            <h5>Configuración de Emisor</h5>
+            <p>Configura y modifica el emisor.</p>
+        </div>
+        <div class="eventos not-bordered">
+
+            <form [formGroup]="EmissorForm" (ngSubmit)="me()">
+
+                <label>Tiempo de emisión: </label>
+                <input formControlName="time_emit" placeholder="(mlls) per minute" name="time_emit" type="number" class="form-control">
+
+                <br>
+                <label>Cantidad de Paquetes: </label>
+                <input formControlName="req_quantity" name="req_quantity" type="number" class="form-control">
+                
+                <br>
+                
+                <ion-toggle  [enableOnOffLabels]="true" >Activar emisión espejo </ion-toggle>
+                <br>
+                
+                <ion-toggle  [enableOnOffLabels]="true">Activar DDOS </ion-toggle>
+                <br>
+                
+                <ion-toggle  [enableOnOffLabels]="true">Activar VPN </ion-toggle>
+                <br>
+                <br>
+                <label>Establecer ubicacion unica: </label>
+                <input formControlName="unic_coord" name="unic_f" type="text" class="form-control">
+
+                <br>
+                <label>Establecer endpoind: (check cors config) </label>
+                <input formControlName="end_point" placeholder="https://myhost/api" name="end_point" type="text" class="form-control">
+
+                <br>
+                <button class="btn btn-secondary">ACTUALIZAR</button>
+            </form>
+        </div>
+    </section>
+    <br>
+
+</ion-content>

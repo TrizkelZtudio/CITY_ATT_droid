@@ -1,0 +1,38 @@
+<div class="animate__animated animate__fadeIn animate__delay-1s">
+
+
+</div>
+
+<body class="back">
+    <!--  START  -->
+    <div #waitPan id="waitPan" class="">
+
+        <div class="element-succ " style="width: 100%; ">
+
+            <div class="parrafoc " style="width: 100%; text-align: center; padding-bottom: 2rem; ">
+                <h5 class="title-parrafo" style="color: black!important; ">EMITIENDO UBICACIÓN</h5>
+                <p class="desc-parrafo " style="color: #7e7e7e!important; ">COMPRUEBA UNA CONEXION ESTABLE</p>
+                <div id="clock">
+                    <span id="seconds-count"></span> 00:0<span id="seconds">0</span>
+                </div>
+                <br>
+                <div>
+                    <span>Tiempo de emisión</span>
+                </div>
+
+                <div class="button-cancel">
+                    
+                    <a (click)="CancelLine()" style="color: white; text-decoration: none;">CANCELAR</a>
+                </div>
+            </div>
+
+
+            <div class="bar red fixed-bottom"></div>
+        </div>
+    </div>
+
+    <div #infoActive>
+        <p class="emitiendo">EMITIENDO</p>
+    </div>
+
+</body>

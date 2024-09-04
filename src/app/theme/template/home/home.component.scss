@@ -1,0 +1,36 @@
+.eventos {
+    height: auto;
+}
+
+.content-event {
+    padding: 0px!important;
+}
+
+.more-event {
+    width: 100%;
+    text-align: right;
+    justify-content: right;
+    font-size: 11px;
+    display: flex;
+}
+
+button.share-card-new {
+    color: #3F3C3C;
+    font-size: 11px;
+}
+
+.event {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #e3e6e9;
+    margin-bottom: 15px;
+    align-items: center;
+    max-height: 100px;
+}
+
+.hour {
+    color: #3F3C3C;
+    font-size: 11px;
+}

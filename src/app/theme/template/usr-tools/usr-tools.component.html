@@ -1,0 +1,68 @@
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+<body class="body-blue animate__animated animate__fadeInLeft animate__delay-1s">
+
+    <div class="backto fixed-top">
+        
+    </div>
+
+
+    <div class="header-app fixed-top">
+        <img src="../../../../../assets/img/logo-login.png" loading="lazy" alt="">
+        <h5 class="name"> <i class="fa-solid fa-user-astronaut"></i> &nbsp; Proximos</h5>
+        
+        <div class="data">    
+            <!-- <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> &nbsp;Cerrar sesión</a> -->
+        </div>
+
+    </div>
+
+    <div class="content-app">
+
+
+
+        <!-- (click)="Mysettings()" -->
+        <div class="module-light licite" (click)="Anon()">
+            <div class="module-icon icon-black">
+                <i class="fas fa-address-book"></i>
+            </div>
+            <div class="content-m-light">
+                <h5 class="title-module">Mis Contactos</h5>
+                <span class="desc-module">Configura tus contactos</span>
+            </div>
+        </div>
+
+        <div class="module-light licite" (click)="Analitcs()">
+            <div class="module-icon icon-black">
+                <i class="fas fa-chart-line"></i>                
+            </div>
+            <div class="content-m-light">
+                <h5 class="title-module">Analisis de Uso</h5>
+                <span class="desc-module">Monitor de uso en la app</span>
+            </div>
+        </div>
+
+        
+
+        <div class="module-light" (click)="comparte()">
+            <div class="module-icon icon-black">
+                <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="content-m-light">
+                <h5 class="title-module">Compartir</h5>
+                <span class="desc-module">Envia archivos por distintos canales.</span>
+            </div>
+        </div>
+        <div class="module-light" (click)="ztudio()">
+            <div class="module-icon icon-red">
+                <i class="fas fa-paper-plane"></i>
+            </div>
+            <div class="content-m-light">
+                <h5 class="title-module">Contactanos</h5>
+                <span class="desc-module">Comunicate con el Ztudio</span>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>

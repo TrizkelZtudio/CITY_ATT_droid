@@ -1,0 +1,90 @@
+<ion-header [translucent]="true" style="z-index: 0; ">
+
+
+</ion-header>
+
+<ion-content > 
+
+    <div class="backto fixed-top" (click)="back()" style="color: var(--bs-primary)!important; position: relative;">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+    
+
+
+    <section class="standard">
+
+        <hr>
+        <br>
+        <div class="title-section">
+            <h5>Ajustes</h5>
+
+        </div>
+        <div class="eventos not-bordered">
+  
+            <div class="event" (click)="panicSett()">
+                <div class="body-event full-card">
+                    <div class="content-event d-flex justify-content-between">
+                        <div class="icon-CARD-title">
+                            <i class="fa-light fa-brake-warning"></i><span>Ajustes de Emision</span>
+                        </div>
+                        <i class="fas fa-wrench"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="standard">
+
+        <div class="title-section">
+            <h5>Asistencia</h5>
+        </div>
+        <div class="eventos not-bordered">
+            <!-- <div class="event" (click)="about()">
+                <div class="body-event full-card">
+                    <div class="content-event d-flex justify-content-between">
+                        <div class="icon-CARD-title">
+                            <i class="fak fa-light-tiza"></i><span>Acerca de TizApp</span>
+                        </div>
+                        <i style="font-size: 20px;" class="fa-duotone fa-angle-right"></i>
+                    </div>
+
+                </div>
+            </div> -->
+            <div class="event" (click)="comments()">
+                <div class="body-event full-card">
+                    <div class="content-event d-flex justify-content-between">
+                        <div class="icon-CARD-title">
+                            <i class="fa-light fa-comment-lines"></i><span>Envíanos tus comentarios</span>
+                        </div>
+                        <i class="far fa-comment"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section class="standard">
+
+        <div class="title-section">
+            <h5>Legal</h5>
+        </div>
+        
+        <div class="eventos not-bordered">
+            <div class="event" (click)="legal()">
+                <div class="body-event full-card">
+                    <div class="content-event d-flex justify-content-between">
+                        <div class="icon-CARD-title">
+                        <span>Aviso de Privacidad</span>
+                        </div>
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+</ion-content>

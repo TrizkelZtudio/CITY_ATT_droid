@@ -1,0 +1,111 @@
+ul#password-validator li {
+    font-size: 12px;
+    font-weight: 500;
+    color: #616161;
+}
+
+ul.strength {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 5px;
+    font-size: 0;
+}
+
+ul.strength li:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+ul.strength li:last-child {
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+ul.strength .point {
+    background: #ddd;
+    display: inline-block;
+    height: 3px;
+    margin-right: 0%;
+    width: 32%;
+}
+
+ul.strength .strength-0 {
+    background-color: #f00;
+}
+
+ul.strength .strength-1 {
+    background-color: #FCD535;
+}
+
+ul.strength .strength-2 {
+    background-color: #00d99a;
+}
+
+ion-item::part(native) {
+    //WRITE ALL YOUR CSS RULES HERE
+    padding-inline-start: 0!important;
+    padding-left: 0!important;
+    border-bottom: 2px solid #9f2241;
+    /** and lots more **/
+}
+
+ion-input.form-control.register.sc-ion-input-ios-h.sc-ion-input-ios-s.ios.hydrated {
+    border: 0;
+}
+
+ion-item.item-interactive.item-input.item-has-placeholder.item.ios.item-fill-none.ion-focusable.hydrated {
+    border-bottom: 2px solid #9f2241;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #9f2241;
+}
+
+.sc-ion-input-ios-h {
+    color: #4E4E4E;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.sc-ion-input-ios-h {
+    --placeholder-opacity: 1;
+}
+
+i.far.fa-calendar {
+    color: #4E4E4E;
+    font-size: .7rem;
+}
+
+.btn-group,
+.btn-group-vertical {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#password-validator li.valid {
+    color: #48c78e;
+}
+
+span#ok {
+    background-color: #48c78e40!important;
+    color: #48c78e!important;
+}
+
+#password-validator li.valid::after {
+    content: "✓";
+    margin-left: 10px;
+}
+
+#password-validator li.error {
+    color: #da1039;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}

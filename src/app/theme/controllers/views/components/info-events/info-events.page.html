@@ -1,0 +1,83 @@
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+
+<ion-header [translucent]="true" style="z-index: 0;">
+</ion-header>
+<ion-content>
+    <div id="sendclass" class="sendclass animate__animated animate__fadeIn animate__delay-1s">
+
+        <div class="header-background">
+        </div>
+
+
+        <div class="hello">
+            <div class="name-header">
+                <div class="backto" onclick="window.history.go(-1);" style="margin-top: 0; font-size: 1.2rem; color: white; margin-bottom: .5rem;">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <h2 class="sub2" style="color: white;">¿Qué haremos hoy?</h2>
+
+            </div>
+
+        </div>
+
+
+        <section class="standard">
+            <div class="eventos" style="background-color: white;">
+        
+                <div class="eventos" style="height: auto; margin-bottom: 8rem">
+
+                    <ng-container>
+                        
+        
+                        <div class="emits animate__animated animate__fadeIn animate__delay-1s">
+                            
+                            <img [src]="'../../../../assets/img/grids/mountain-content.png'" style="margin-bottom: 5px">
+        
+                            
+                            
+                            <div class="body-event">
+                                
+                                <div class="header-event-card">
+                                    <div class="date-event" style="margin-right: 7px;">
+                                        <span>{{ Today }}</span>
+                                        <span class="bordered-tag" style="font-size: 13px;">
+                                        CLASE A &nbsp;
+        
+                                        </span>
+                                    </div>
+        
+                                </div>
+        
+                                <div class="content-event">
+                                    <h3 style="font-size:16px"> Incursión Sombra</h3>
+                                    <p style="    line-height: 1.2!important;
+                                    display: block;
+                                    font-size: 13px;">Antiguedad 2.22</p>
+                                </div>
+        
+                                <div class="more-event">
+                                    <div class="hour" style="font-size: 14px;">
+                                        7:00 a.m.
+                                    </div>
+        
+                                </div>
+                            </div>
+        
+                        
+                        </div>
+    
+                    </ng-container>
+        
+                </div>
+        
+
+                
+                
+                <div class="separator-bottom"></div>
+            </div>
+        </section>
+
+    </div>
+
+
+</ion-content>

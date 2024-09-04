@@ -1,0 +1,145 @@
+<div id="tohme" style="flex-direction: column;" class=" principcontent animate__animated animate__fadeIn animate__delay-1s">
+
+    <div class="header-background">
+    </div>
+ 
+    <div class="hello">
+        <div class="name-header">
+            <h3>¡Hola de Nuevo !</h3>
+        </div>
+    </div>
+
+    <div class="gridhome">
+
+        <div class="ANUNCIATE" (click)="HomeRouter('home_form')">
+            <aside class="overlay">
+                <h3>Formulario 1</h3>
+            </aside>
+        </div>
+
+        <div class="PANICO" (click)="HomeRouter('config')">
+            <aside class="overlay">
+
+                <h3>Configuraciones</h3>
+                <!-- <span class="st">asdas</span> -->
+            </aside>
+        </div>
+
+        <div class="INTERNET" (click)="HomeRouter('mapas')">
+            <aside class="overlay">
+
+                <h3>Mapas</h3>
+                <!-- <span class="st">asdas</span> -->
+            </aside>
+        </div>
+
+        <div class="TRAMITES" (click)="HomeRouter('infrom')">
+            <aside class="overlay">
+                <h3>Info From</h3>
+            </aside>
+        </div>
+    </div>
+
+
+        <div id="noticias" class="section" style="padding-right: 0rem!important;">
+
+            <div class="title-section">
+                <h5>Novedades y Actualizaciones</h5>
+            </div>
+
+            <div class="carousel">
+
+                <!-- <span *ngFor="let news of Giornale; let info = index"> -->
+                    
+                <span>
+                    <div (click)="HomeRouter('news','nvctatt12102422312')" class="slide animate__animated animate__fadeIn animate__delay-1s">
+
+                        <div class="card new-01"  style="background-image: url('../../../../assets/img/grids/mountain-content.png'); border-radius:10px" >
+                            <div class="overlay-card" style="background: linear-gradient(203deg, rgba(0, 0, 0, 0.15730042016806722) 0%, rgba(0, 0, 0, 0) 100%); ">
+                                <a  class="share-card-new"><i class="fal fa-share-square"></i></a>
+                                <!-- (click)="shareInfo(news.titulo_noticia, news.descripcion_breve, news.goto,'Compartir Noticia')" -->
+                            </div>
+                            <!-- Skelet  or not image-->
+                            <!-- <div class="overlay-card" style="background: linear-gradient(203deg, rgba(0, 0, 0, 0.15730042016806722) 0%, rgba(0, 0, 0, 0) 100%); ">
+                                <a (click)="shareInfo(news.titulo_noticia, news.descripcion_breve, news.goto,'Compartir Noticia')" class="share-card-new"><i class="fal fa-share-square"></i></a>
+                            </div> -->
+                        </div>
+
+                        <span class="datetime-news"><i class="fas fa-history"></i>&nbsp;&nbsp;{{ Today }}</span>
+                        <h6 class="title-news-card">CT.ATT v1.0 esta aquí</h6>
+                        <a (click)="HomeRouter('news','nvctatt12102422312')"  class="button-new">SEGUIR LEYENDO &nbsp;<i class="fas fa-angle-right"></i></a>
+
+                    </div>
+                </span>
+
+            </div>
+        </div>
+<br>
+
+
+        <!-- *ngIf="Evento.length > 0 " -->
+        <section  class="standard" >
+        <div class="title-section" style="    margin-top: 10px;">
+            
+            <h5>EVENTOS EMITIDOS</h5>
+        </div>
+
+        <div class="eventos" style="height: auto; margin-bottom: 8rem">
+
+            <ng-container>
+                
+
+                <div (click)="HomeRouter('in_evnt','idesomb121ssi')" class="event animate__animated animate__fadeIn animate__delay-1s">
+                    
+                    <div class="thumbnail-event" style="background-image: url('../../../../assets/img/grids/mountain-content.png'); border-radius:10px">
+
+                    </div>
+                    
+                    <div class="body-event">
+                        
+                        <div class="header-event-card">
+                            <div class="date-event">
+                                <span>{{ Today }}</span>
+                                <span class="bordered-tag">
+                                CLASE A &nbsp;
+                                <!-- <i *ngIf="events.categorias === 'CLASE_A'" class="fa-regular fa-robot"></i>
+                                <i *ngIf="events.categorias === 'EXPEDICION'" class="fa-regular fa-paintbrush"></i> -->
+
+                                </span>
+                            </div>
+
+                            <!-- <div class="tools-event">
+                                <a (click)="shareInfo(events.titulo_evento, events.descripcion_breve, events.enlace_boton,'Compartir Evento')" style="background-color: transparent!important;" class="share-card-event"><i class="fal fa-share-square"></i></a>
+                            </div> -->
+                        </div>
+
+                        <div class="content-event">
+                            <h6> Incursión Sombra</h6>
+                            <span style="    line-height: 1.2!important;
+                            display: block;
+                            font-size: 11px;">Antiguedad 2.22</span>
+                        </div>
+
+                        <div class="more-event">
+                            <div class="hour">
+                                7:00 a.m.
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+                </div>
+
+                <!-- <button (click)="shareInfo(titulo,descripcion, enlace_boton,'Compartir Evento')">Compartir</button> -->
+            </ng-container>
+
+        </div>
+
+        </section>
+
+
+    <div class="separator-bottom"></div>
+
+
+</div>

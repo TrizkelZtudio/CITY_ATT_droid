@@ -1,0 +1,89 @@
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+
+<ion-header [translucent]="true" style="z-index: 0;">
+</ion-header>
+<ion-content>
+    <div id="sendclass" class="sendclass animate__animated animate__fadeIn animate__delay-1s">
+
+        <div class="header-background">
+        </div>
+
+
+        <div class="hello">
+            <div class="name-header">
+                <div class="backto" onclick="window.history.go(-1);" style="margin-top: 0; font-size: 1.2rem; color: white; margin-bottom: .5rem;">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <h2 class="sub2" style="color: white;">¿Qué haremos hoy?</h2>
+
+            </div>
+
+        </div>
+
+
+        <section class="standard">
+            <div class="eventos" style="background-color: white;">
+                
+                <form 
+                    class="cameras"
+                    autocomplete="off" 
+                    [formGroup]="FrstForm" 
+                    (ngSubmit)="sendForm()">
+
+                    <div class="desc-report">
+                        <p>Envia tus datos y/o almacenalos  <br><span></span></p>
+                        <div class="date-event">
+                            <span class="second">FORM - tool </span>
+                        </div>
+                    </div>
+                    
+                    <label>Al envíar tu información, se almacena en la base de datos local</label>
+                    
+                    <div>
+                        <label>Titulo </label>
+                        <input style="font-family: 'Montserrat'" type="text" class="form-control" placeholder="titulo" formControlName="titulo" name="titulo">
+                        <br>        
+                        
+                        <label>Referencias </label>
+                        <input style="font-family: 'Montserrat'" type="text" class="form-control" placeholder="referencias" formControlName="referencias" name="referencias">
+                        <br>
+
+                        <label>URL </label>
+                        <input style="font-family: 'Montserrat'" type="text" class="form-control" placeholder="https://site.com" formControlName="urele" name="urele">
+                        <br>
+
+                    </div>
+
+                    <div class="footerSlides">
+                        <button class="btn btn-primary"><i class="fas fa-user-astronaut"></i>&nbsp;ENVIAR POST</button>
+                    </div>
+
+                </form>
+     
+                <span *ngIf="oleMsg" class="alertForm  animate__animated animate__fadeIn animate__delay-1s">
+                  {{oleMsg}}
+                </span>
+                <div class="separator-bottom"></div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+    <div id="succok" class="succok align-items-center d-flex justify-content-center min-vh-100" style="width: 100%; margin-top:50%;">
+
+        <div class="element-succ cont-box animate__animated animate__fadeInLeftBig ">
+
+            <div class="parrafo" style="width: 85%; text-align: center;">
+                <h4 class="title-parrafo" style="color:#fff;">¡El archivo ha sido creado!</h4>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</ion-content>

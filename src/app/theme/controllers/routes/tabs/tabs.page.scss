@@ -1,0 +1,28 @@
+.block-onx {
+    display: block;
+}
+
+.block-offx {
+    display: none;
+}
+
+ion-tab-button.navigation-tab-item span i.selectedtwo {
+    display: none;
+}
+
+ion-tab-button.navigation-tab-item span i.normalfirst {
+    display: block;
+}
+
+ion-tab-button.navigation-tab-item.tab-selected span i.normalfirst {
+    display: none;
+}
+
+ion-tab-button.navigation-tab-item.tab-selected span i.selectedtwo {
+    display: block;
+}
+
+ion-tab-button.navigation-tab-item.tab-selected span {
+    color: #394e17 !important;
+    
+}

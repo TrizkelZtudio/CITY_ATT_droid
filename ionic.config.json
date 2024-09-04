@@ -1,0 +1,7 @@
+{
+  "name": "tizayocan",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

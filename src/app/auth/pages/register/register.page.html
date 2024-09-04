@@ -1,0 +1,124 @@
+<ion-header [translucent]="true" style="z-index: 0;">
+
+    <ion-buttons slot="start">
+        <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+
+</ion-header>
+
+
+<ion-content>
+    <div class="content-REG">
+
+        <div class="backto" (click)="backto()">
+            <i class="fas fa-arrow-left"></i>
+        </div>
+
+        <h2 class="sub2">CREAR CUENTA</h2>
+        <span class="desctext">Ingresa los datos y presiona REGISTRARSE</span>
+
+
+        <form autocomplete="off" [formGroup]="Formularioregistrazione" (ngSubmit)="register()">
+
+            <div class="form-group material-style">
+                <input formControlName="usr_app" name="usr_app" type="email" class="form-control register" placeholder=" ">
+                <label>Correo </label>
+            </div>
+            <span class="alertForm" *ngIf="!Formularioregistrazione.controls['usr_app'].valid && Formularioregistrazione.controls['usr_app']?.touched">
+      El correo es obligatorio
+    </span>
+            <div class="form-group material-style  show-pass" id="show-pass">
+                <input id="password-register" formControlName="pass_app" (keyup)="campoNoValido()" name="pass_app" type="password" class="form-control register" minlength="8" placeholder=" ">
+                <label>Contraseña</label>
+                <a (click)="showPass()"><i class="toggle-password-blue">MOSTRAR</i></a>
+                <ul class="strength" id="txtEmailPassword_strength_meter" field-id="txtEmailPassword" ng-show="showMeter">
+                    <li id="slw" class="point strength"></li>
+                    <li id="medum" class="point strength"></li>
+                    <li id="strng" class="point strength"></li>
+                </ul>
+            </div>
+            <div id="password-validator" class="ocultar">
+                <span class="alertForm " style="background-color: #8d8d8d4d!important; color: #4c4c4c!important;">Por seguridad la contraseña debe contener: </span>
+                <ul>
+                    <li data-val-regex="^.{8,26}$">8 o más caracteres</li>
+                    <li data-val-regex="[A-Z]">Una letra mayúscula [A-Z]</li>
+                    <li data-val-regex="[a-z]">Una letra minúscula [a-z]</li>
+                    <li data-val-regex="[0-9]">Un número [0-9]</li>
+                    <li data-val-regex="[^A-Za-z0-9_]">Un símbolo [!@#$...]</li>
+                </ul>
+            </div>
+
+
+
+            <div class="form-group material-style  show-pass" id="show-pass">
+                <input id="password-confirm" type="password" name="passconfirm" formControlName="passconfirm" class="form-control register" placeholder=" ">
+                <label>Confirmar Contraseña</label>
+            </div>
+            <span id="err" class="alertForm ocultar">
+              Las contraseñas no coinciden, vuelve a intentar!
+            </span>
+            <span id="ok" class="alertForm ocultar">
+              Las contraseñas coinciden!
+            </span>
+            <!-- <span class="alertForm" *ngIf="!Formularioregistrazione.controls['passconfirm'].valid && Formularioregistrazione.controls['passconfirm']?.touched">
+      Repite la contraseña
+    </span> -->
+
+
+            <div class="form-group material-style  show-pass" id="show-pass">
+                <input id="ilphono" formControlName="ilphono" name="ilphono" type="number" class="form-control register" minlength="10" maxlength="11" placeholder=" ">
+                <label>Número Teléfonico</label>
+            </div>
+
+            <div id="pwval" class="ocultar">
+                <span data-val-regex="^.{10,10}$" class="alertForm ">El número es incorrecto (10 dígitos)</span>
+
+            </div>
+
+            <span class="alertForm" *ngIf="!Formularioregistrazione.controls['ilphono'].valid && Formularioregistrazione.controls['ilphono']?.touched">
+    El número de teléfono es obligatorio
+  </span>
+
+
+            <!-- <div class="form-group material-style" style="margin-bottom: 0;">
+
+                
+                <div (click)="calendar()" class="form-control register" id="open-modal" ><b>Seleccionar: </b>{{showdate}}</div>
+
+                <ion-datetime presentation="date" class="form-control register" formControlName="birthday"style="display:none" id="datetime" (ionChange)="dateChanged($event)"></ion-datetime>
+                
+
+                <label style="padding-left: 1rem;margin-top: .5rem;z-index: 9;">Fecha de Nacimiento</label>
+            </div>
+            <span class="alertForm" *ngIf="!Formularioregistrazione.controls['compleannoxtz'].valid && Formularioregistrazione.controls['compleannoxtz']?.touched">
+      La fecha de nacimiento es obligatoria
+    </span>
+     -->
+            <br>
+            
+            <button id="rgbtn" [disabled]="!this.Formularioregistrazione.valid" class="btn btn-secondary">REGISTRARSE</button>
+        </form>
+
+    </div>
+
+
+
+    <div id="wook" class="align-items-center d-flex justify-content-center min-vh-100" style="width: 100%; margin-top:23vh;">
+
+        <div class="element-succ ">
+
+            <div class="parrafo" style="width: 85%; text-align: center;">
+                <h5 class="title-parrafo">¡REGISTRO EXITOSO!</h5>
+                <p class="desc-parrafo">Espera un momento.</p>
+            </div>
+            <div class="imagenback-other sl-registro">
+                <img src="assets/img/slides/registro.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="bar green fixed-bottom"></div>
+    </div>
+
+
+</ion-content>

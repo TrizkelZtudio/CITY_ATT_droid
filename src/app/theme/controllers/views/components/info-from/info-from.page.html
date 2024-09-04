@@ -1,0 +1,44 @@
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+
+<ion-header [translucent]="true" style="z-index: 0;">
+</ion-header>
+<ion-content>
+    <div id="sendclass" class="sendclass animate__animated animate__fadeIn animate__delay-1s">
+
+        <div class="header-background">
+        </div>
+
+
+        <div class="hello">
+            <div class="name-header">
+                <div class="backto" onclick="window.history.go(-1);" style="margin-top: 0; font-size: 1.2rem; color: white; margin-bottom: .5rem;">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <h2 class="sub2" style="color: white;">¿Qué haremos hoy?</h2>
+
+            </div>
+
+        </div>
+
+
+        <section class="standard">
+            <div *ngFor="let info of laInfo" class="eventos" style="background-color: white;">
+          
+              <div class="una-box">
+                <p>Estado: {{info.cvegeo}} </p>
+                <p><b>Municipio:</b> {{info.cve_ent}}</p>
+                <p>Nombre Entidad: {{info.nomgeo}}</p>
+                <br>
+                <p>Población Femenina: {{info.pob_femenina}}</p>
+                <p>Población Masculina: {{info.pob_masculina}}</p>
+                <p><b>Total de habitantes:</b> {{info.pob_total}}</p>
+                
+              </div>
+
+                <div class="separator-bottom"></div>
+            </div>
+        </section>
+
+    </div>
+
+</ion-content>

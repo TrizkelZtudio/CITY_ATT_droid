@@ -1,0 +1,60 @@
+<ion-header [translucent]="true" style="z-index: 0;">
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <div class="back gradientblue2">
+        <div id="LOGO-login">
+            <!-- <img class="L-1" src="#" loading="lazy" alt="LOGO"> -->
+        </div>
+
+        <div class="content-form fixed-bottom">
+            <div *ngIf="label" class="row justify-content-between lable animate__animated animate__fadeIn animate__delay-1s">
+                <span class="txt-lable">{{mssg}}</span>
+            </div>
+            <form autocomplete="off" [formGroup]="LogForm" (ngSubmit)="inn()">
+
+                <div class="form-group material-style blues ">
+                    <input type="email" formControlName="usr_app" name="usr_app" class="form-control" (focus)="logokey()" (blur)="logores()" placeholder=" ">
+                    <label>Email</label>
+                </div>
+                <span class="alertForm" *ngIf="!LogForm.controls['usr_app'].valid && LogForm.controls['usr_app']?.touched">
+                El correo es obligatorio
+              </span>
+                <div class="form-group material-style blues show-pass" id="show-pass">
+                    <input formControlName="pass_app" name="pass_app" id="password-login" type="pass_app" class="form-control" (focus)="logokey()" (blur)="logores()" placeholder=" ">
+                    <label>Contraseña</label>
+                    <a (click)="look()"><i class="toggle-password">MOSTRAR</i></a>
+                </div>
+                <span class="alertForm" *ngIf="!LogForm.controls['pass_app'].valid && LogForm.controls['pass_app']?.touched">
+              La contraseña es obligatoria
+              </span>
+                <button id="initlog" class="btn btn-primary" [disabled]="LogForm.invalid">INICIAR SESIÓN</button>
+            </form>
+            
+
+
+
+
+            <br>
+            <br>
+            <div class="no-move">
+                <div class="row justify-content-between links-login">
+                    <div class="col-6">
+                        <span>OLVIDE MI CONTRASEÑA</span>
+
+                    </div>
+                </div>
+
+                <br>
+
+                <footer>
+                    <div class="aviso">
+                        <span (click)="privacy()">AVISO DE PRIVACIDAD</span>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+    </div>
+</ion-content>

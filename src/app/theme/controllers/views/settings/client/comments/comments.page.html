@@ -1,0 +1,41 @@
+
+
+<ion-header [translucent]="true" style="z-index: 0;">
+
+
+
+</ion-header>
+
+
+<ion-content>
+
+
+   
+
+    <div class="backto fixed-top" (click)="backto()" style="color: var(--bs-primary)!important; display: block; position: relative;">
+        <i class="fas fa-chevron-left"></i>
+    </div>
+
+    <section class="standard">
+
+        <div class="title-section">
+            <h5>Envíanos tus comentarios</h5>
+            <p>Recuerda que nos encontramos realizando actualizaciones constantes.</p>
+        </div>
+        <div class="eventos not-bordered">
+            <form [formGroup]="Comments" (ngSubmit)="comenta()">
+
+                <label>Asunto:</label>
+                <input formControlName="affair" name="affair" type="text" class="form-control">
+
+                <label>Comentario:</label>
+                <textarea formControlName="comment" name="comment" type="text" class="form-control">
+              </textarea>
+
+                <button [disabled]="Comments.invalid" class="btn btn-secondary">ENVIAR</button>
+            </form>
+        </div>
+    </section>
+    <br>
+
+</ion-content>

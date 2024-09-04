@@ -1,0 +1,52 @@
+.principalcont {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.eventos {
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #e3e6e9;
+    border-radius: 11px;
+    /* border-bottom: 0; */
+    /* border-bottom-left-radius: 0px; */
+    /* border-bottom-right-radius: 0px; */
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+button.btn.btn-primary {
+    font-weight: 700;
+}
+
+.content-event span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 210px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content-event {
+    padding: 0px!important;
+}
+
+.pin i {
+    font-size: 11px;
+}
+
+
+body {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.content-block i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    color: #587bb9;
+}

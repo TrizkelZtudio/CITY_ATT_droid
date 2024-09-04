@@ -1,0 +1,70 @@
+<ion-header [translucent]="true" style="z-index: 0;">
+</ion-header>
+<ion-content >
+
+    <div class="categories-view">
+
+        <div class="header-background">
+
+        </div>
+
+
+        <div class="hello">
+            <div class="name-header">
+                <div class="backto" (click)="home()" style="margin-top: 0; font-size: 1.2rem; color: white; margin-bottom: .5rem;">
+                  <i class="fas fa-chevron-left"></i>
+                </div>
+                <h2 class="sub2" style="color: white;">Nuevo Media File</h2>
+
+            </div>
+        </div>
+
+
+        <section class="standard">
+            <div class="eventos" style="background-color: white; border:none;">
+                <div class="desc-report">
+                    Selecciona la herramienta necesaria.
+                </div>
+                <div class="grid-report">
+
+                    <div class="block block-01" (click)="ToCategory('camera')">
+                        <div class="content-block">
+                          <i class="fas fa-camera"></i>
+                            <div class="title-block">Capturar Foto </div>
+                        </div>
+
+                    </div>
+
+                    <div class="block block-02" (click)="ToCategory('audio')">
+                        <div class="content-block">
+                          <i class="fas fa-microphone"></i>
+                            <div class="title-block">Capturar Audio</div>
+                        </div>
+                    </div>
+
+                    <div class="block block-03" (click)="ToCategory('files')">
+                        <div class="content-block">
+                          <i class="fas fa-upload"></i>
+                            <div class="title-block">Subir archivo</div>
+                        </div>
+                    </div>
+
+                    <div class="block block-04" (click)="ToCategory('blueth')">
+                        <div class="content-block">
+                          <i class="fab fa-bluetooth-b"></i>
+                            <div class="title-block">Transferir via bluetooth</div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <div class="separator-bottom"></div>
+
+
+    </div>
+
+</ion-content>

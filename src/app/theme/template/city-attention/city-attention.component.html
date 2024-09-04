@@ -1,0 +1,93 @@
+<!-- eslint-disable @angular-eslint/template/eqeqeq -->
+<div class="principalcont animate__animated animate__fadeIn animate__delay-1s">
+
+    <div class="header-background">
+    </div>
+
+    <div class="hello">
+        <div class="name-header">
+
+            <h2 class="sub2" style="color: white;">Mis Archivos Media</h2>
+        </div>
+    </div>
+
+    
+    <section class="standard" *ngIf="Viewxreports.length == 0 "> 
+        <div class="eventos" style="background-color: white;">
+
+            <div class="empty-content">
+                <img class="emptyImg" src="../../../../assets/img/tecnical.png" loading="lazy" alt="">
+                <div class="content-event" style="text-align: center;">
+                    <h6>No has creado ningún archivo por ahora.</h6>
+                    <span style="text-align: center; width: 100%; overflow: auto; white-space: unset; text-overflow: unset;">Captura archivos multimedia fotos, videos, audios .</span>
+                </div>
+                <div class="footerSlides">
+                    <a data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="opacity: 1!important; border: none; margin: 0;">
+                        <button type="button" class="btn btn-primary" (click)="newMedia()"><i class="fa-solid fa-circle-plus"></i>&nbsp;CAPTURAR MULTIMEDIOS</button>
+                    </a>
+                </div>
+            </div> 
+
+        </div>
+        
+    </section>
+
+
+
+
+    <section class="standard" *ngIf="Viewxreports.length > 0">
+
+    
+
+            <div *ngFor="let report of Viewxreports; let info = index" class="eventos" style="background-color: white;">
+                
+
+                <div class="event" (click)="WatchDetails(Viewxreports[info].report_id)">
+                    <div class="thumbnail-event" style="background-image: url( {{Viewxreports[info].report_img}} );">
+                    </div>
+    
+                    <div class="body-event">
+                        <div class="header-event-card">
+                            <div class="date-event">
+                                <span class="bordered-tag">{{Viewxreports[info].report_area}}&nbsp;</span>
+                            </div>
+    
+                            <div class="tools-event">
+                                <a class="share-card-event" href="#"><i class="fa-solid fa-angles-right"></i></a>
+                            </div>
+                        </div>
+    
+                        <div class="content-event">
+                            <h6>{{Viewxreports[info].reference}}</h6>
+                            <span>{{Viewxreports[info].report_info}}</span>
+                        </div>
+    
+                        <div class="more-event"> 
+                            <div class="pin">
+                                <i class="fa-solid fa-clock-rotate-left"></i> &nbsp;
+                            </div>
+                            <div class="hour">
+                                {{Viewxreports[info].report_date | date: 'dd/MM/yyyy'}}
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                
+            </div>
+
+
+    </section>
+
+
+   
+
+
+
+    <div class="floatBtn" >
+        <a (click)="newMedia()"><i class="fa-duotone fa-circle-plus" style="--fa-secondary-opacity: 1; --fa-primary-color: white; "></i></a>
+    </div>
+    <div class="separator-bottom"></div>
+
+</div>

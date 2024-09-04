@@ -1,0 +1,41 @@
+.content-event {
+    padding: 0px!important;
+}
+
+.backto.fixed-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem !important;
+    max-width: 85% !important;
+    margin: 0 auto !important;
+    color: white !important;
+}
+
+.header-app.fixed-top img {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+    position: relative;
+    right: unset!important;
+    float: none !important;
+    margin-top: -8px;
+    -webkit-transform-origin: unset!important;
+    transform-origin: unset!important;
+}
+
+section.standard {
+    width: 100%;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+}
+
+.content-event span {
+    font-size: 14px!important;
+    margin-left: 10px;
+}
+
+i.fa-duotone.fa-stars {
+    color: #bc955c!important;
+    top: -5px;
+    left: -4px;
+    font-size: 15px!important;
+}

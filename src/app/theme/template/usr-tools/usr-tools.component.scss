@@ -1,0 +1,33 @@
+.backto.fixed-top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: .7rem !important;
+    max-width: 85% !important;
+    margin: 0 auto !important;
+    color: white !important;
+    position: absolute;
+    z-index: 9999!important;
+}
+
+.header-app.fixed-top img {
+    -webkit-transform: scale(0.3);
+    transform: scale(0.3);
+    position: relative;
+    right: unset!important;
+    float: none !important;
+    margin-top: -8px;
+    -webkit-transform-origin: unset!important;
+    transform-origin: unset!important;
+}
+
+.data a {
+    color: white!important;
+    font-size: 11px!important;
+    font-weight: 500;
+}
+
+.data h6,
+.data .h6 {
+    color: rgba(255, 255, 255, 0.7607843137);
+    font-size: 11px!important;
+}

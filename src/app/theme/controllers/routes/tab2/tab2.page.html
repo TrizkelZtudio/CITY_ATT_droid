@@ -1,0 +1,16 @@
+<ion-header [translucent]="true" style="z-index: 0;">
+
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+    <app-city-attention fixed></app-city-attention>
+
+    <ion-infinite-scroll threshold="150px" (ionInfinite)="loadData($event)">
+
+        <ion-infinite-scroll-content loadingSpinner="null"></ion-infinite-scroll-content>
+    
+    </ion-infinite-scroll>
+
+</ion-content>
